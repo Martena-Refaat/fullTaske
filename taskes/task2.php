@@ -6,6 +6,7 @@ function myTest() {
   global $string, $next_string;
   if (strlen($next_string) > 1) 
     {
+      //or $next_string='a';
      $next_string= $next_string[0];
      }
 } 
@@ -16,6 +17,8 @@ echo $next_string.'<br>';
 
 //task2
 $URL = 'http://www.example.com/5478631';
+//or $output= explode ('/', $URL);
+//echo end($output);
 function myTest2() {
     global $URL;
 echo substr($URL, strrpos($URL, '/' )+1).'<br>';
